@@ -4,3 +4,6 @@
 [submodule "themes/chic"]
 	path = themes/chic
 	url = https://github.com/Siricee/hexo-theme-Chic.git
+[submodule "themes/prontera"]
+	path = themes/prontera
+	url = https://github.com/AngryPowman/hexo-theme-prontera
