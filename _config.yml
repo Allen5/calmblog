@@ -14,7 +14,7 @@ timezone: ''
 # Menu
 menu:
   Home: /
-  Archives: /archives
+  # Archives: /archives
   Categories: /categories
   Tags: /tags
   About: /about
