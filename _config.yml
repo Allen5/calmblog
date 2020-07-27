@@ -4,7 +4,7 @@
 
 # Site
 title: Motionless 
-subtitle: 'work more and talk less'
+subtitle: 'Work more and Talk less'
 description: ''
 keywords: 'motionless, calmblog'
 author: Allen Wu 
@@ -28,6 +28,11 @@ permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
+
+# Page madrine name transfer
+permalink_pinyin:
+  enable: true
+  separator: '-' # default: '-'
 
 # Directory
 source_dir: source
