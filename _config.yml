@@ -55,10 +55,10 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true 
   tab_replace: ''
   wrap: true
-  hljs: false
+  hljs: true 
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -109,3 +109,15 @@ deploy:
   type: 'git'
   repo: git@github.com:Allen5/allen5.github.io.git
   branch: master
+
+
+# RSS
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub: 
+  content: 
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -data
