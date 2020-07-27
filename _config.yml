@@ -4,20 +4,20 @@
 
 # Site
 title: Motionless 
-subtitle: ''
+subtitle: 'work more and talk less'
 description: ''
-keywords:
+keywords: 'motionless, calmblog'
 author: Allen Wu 
-language: zh_CN
+language: zh-CN
 timezone: ''
 
 # Menu
 menu:
-  index: /
-  archives: /archives
-  categories: /categories
-  tags: /tags
-  about: /about
+  Home: /
+  Archives: /archives
+  Categories: /categories
+  Tags: /tags
+  About: /about
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
