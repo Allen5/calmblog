@@ -21,7 +21,7 @@ categories: Workflow
 
 从```Emacs 23```版本开始的，在启动时首先会尝试加载```~/.emacs.d/init.el```文件或```~/.emacs.d/init.elc```文件。利用这个特性，我们可以将目录结构规划如下：
 
-{% asset_img emacs_config_dir.jpg Emacs目录结构 %}
+<img src="emacs_config_dir.jpg" width="100%" height="100%" title="Emacs目录结构" alt="Emacs目录结构"/>
 
 - init.el
 
@@ -33,7 +33,7 @@ categories: Workflow
 
 - site-lisp
 
-  该目录存放第三方插件。存放包管理工具中获取的依赖包。在emacs版本 >=24时，使用该目录，否则使用 elpa 目录
+  该目录存放第三方插件。存放包管理工具中获取的依赖包。在```emacs版本 >=24```时，使用该目录，否则使用 ```elpa``` 目录
 
 - auto-save-list
 
@@ -74,11 +74,9 @@ categories: Workflow
 
 
 
-使用 ```M-x load-file```命令重新加载 ```init.el```文件，使上述配置生效。如下图所示：
+使用 ```M-x load-file```命令重新加载 ```init.el```文件，使上述配置生效。如下图所示
 
-{% asset_img emacs_common_config.jpg 目录结构 %}
-
-
+<img src="emacs_common_config.jpg" width="100%" height="100%" title="目录结构" alt="目录结构"/>
 
 ### 包管理工具配置
 
@@ -264,7 +262,7 @@ If Emacs' native theem support is available, this setting is ignored: use `custo
 
 接着，输入 ```M-x dark``` 可以看到效果如下：
 
-{% asset_img emacs_theme_01.jpg 目录结构 %}
+<img src="emacs_theme_01.jpg" width="100%" height="100%" title="目录结构" alt="目录结构"/>
 
 
 
@@ -277,7 +275,8 @@ If Emacs' native theem support is available, this setting is ignored: use `custo
 ```lisp
 ;; 编辑属性设置
 
-;; TODO: 字体大小设置
+;; 字体大小设置
+(set-default-font "-*-Menlo-normal-normal-normal-*-14-*-*-*-m-0-iso10646-1")
 
 ;; 全局开启行号显示
 (global-linum-mode t) ;; 开启全局行号显示
@@ -349,4 +348,16 @@ If Emacs' native theem support is available, this setting is ignored: use `custo
 
 接着，输入 ```M-x load-file``` 可以看到效果如下：
 
-{% asset_img emacs_theme_02.jpg 目录结构 %}
+<img src="emacs_theme_02.jpg" width="100%" height="100%" title="当前效果"/>
+
+
+
+### 遇到的新问题以及解决方案
+
+- 打开目录，提示"operation not permitted"错误
+
+  在```mac os catalina```以上版本，对应用的权限访问做了更为严格的控制，需要手动开启。开启路径为：```系统偏好设置 -> 安全性与隐私 -> 完全磁盘访问权限``` 随后把应用添加进去即可。
+
+  此处要注意的是，```mac```上的```Emacs```启动脚本为 ```/usr/bin/ruby```, 因此如果此处磁盘完全访问权限加入的是 ```emacs```这个App本身，仍旧还是会提示 "operation not permitted"错误。需要将 ```/usr/bin/ruby```加入进来才行。
+
+  
