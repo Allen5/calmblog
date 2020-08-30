@@ -7,3 +7,6 @@
 [submodule "themes/prontera"]
 	path = themes/prontera
 	url = https://github.com/AngryPowman/hexo-theme-prontera
+[submodule "themes/aomori"]
+	path = themes/aomori
+	url = https://github.com/lh1me/hexo-theme-aomori.git
