@@ -1,5 +1,5 @@
 ---
-title: 'Emacs配置（一）: 重新上路'
+title: 'Emacs配置（一）-重新上路'
 date: 2020-07-27 23:46:08
 tags: [Emacs配置, Workflow]
 categories: Workflow

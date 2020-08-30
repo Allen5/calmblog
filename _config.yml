@@ -126,3 +126,11 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
   order_by: -data
+
+# comment
+# gitalk: false
+# gitalk_owner:
+# gitalk_admin: []
+# gitalk_repo:
+# gitalk_client_id:
+# gitalk_client_secret:
