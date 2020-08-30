@@ -6,8 +6,8 @@
 title: Motionless 
 subtitle: 'Work more and Talk less'
 description: ''
-keywords: 'motionless, calmblog'
-author: Allen Wu 
+keywords: 'motionless'
+author: 吴三爷
 language: zh-CN
 timezone: ''
 
@@ -60,7 +60,7 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: true 
+  auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: true 
@@ -106,7 +106,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: Hacker 
+theme: Hacker
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
