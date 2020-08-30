@@ -16,8 +16,6 @@ MQTT全称为 ```Message Queue Telemetry Transport``` 即消息队列遥测传�
 
 MQTT协议是基于```TCP```实现的消息型协议，MQTT-SN是基于```UDP```实现的用于在蓝牙上传输
 
-
-
 ### 服务质量(QoS)
 
 对于消息型协议，有一个服务质量的概念。标准的定义如下：
